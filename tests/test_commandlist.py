@@ -3,7 +3,7 @@ from ambrosio import commandlist
 
 class TestCommandList(unittest.TestCase):
 
-    def test_000_newqueue_length(slef):
+    def test_000_newqueue_length(self):
         c1 = commandlist.CommandList()
         self.assertEqual(c1.length(),0)
 
@@ -16,4 +16,3 @@ class TestCommandList(unittest.TestCase):
         c1.append("Test")
         c = c1.next()
         self.assertEqual(c,"Test")
-        
