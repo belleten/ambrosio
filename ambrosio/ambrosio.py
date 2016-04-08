@@ -16,6 +16,7 @@ class Ambrosio(object):
         self.c1 = CommandList()
         self.channels = []
         self.channels.append(ch.TextChannel())
+        self.channels.append(ch.TelegramChannel())
         self.actions = []
         self.actions.append(ac.MusicPlayer())
 
@@ -43,7 +44,7 @@ class Ambrosio(object):
                 a.do(rest_words)
                 break
         else:
-            print "No tentenc"
+            print "No t'entenc"
 
     def mainloop(self):
         #While True:
