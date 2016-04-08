@@ -16,3 +16,7 @@ class TestCommandList(unittest.TestCase):
         c1.append("Test")
         c = c1.next()
         self.assertEqual(c,"Test")
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(unittest.main())
